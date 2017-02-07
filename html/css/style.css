@@ -18,21 +18,22 @@
 	text-decoration: none;
 }
 
-.nodecor.whitetxt:visited {
+.whitetxt:visited {
 	color: white;
 }
 
-.nodecor.whitetxt:hover {
+.whitetxt:hover {
 	color: white;
 }
 
-.nodecor.whitetxt:active {
+.whitetxt:active {
 	color: white;
 }
 
 .whitetxt {
 	color: white;
 }
+
 .floatright{
 	float: right;
 }
