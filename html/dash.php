@@ -30,14 +30,13 @@
 	<!--header-->
 		<div class="header shadow">
 			<div class="titlespace">
-				<a href="#" class="go nodecor logospace">
+				<a href="/" class="go nodecor logospace">
 				</a>
 				<h3 class="whitetxt">&nbsp;Solar power for everyone</h3>
 				<div class="clearfix"></div>
 			</div>
 			
 			<div class="header-top">
-				
 				<div class="top-nav">
 					<ul class="floatright">
 						<li><a href="/">HOME</a></li>
@@ -47,9 +46,8 @@
 				</div>
 			</div>
 
-			<div class="header-bottom">
-				
-			<div class="top-nav">
+			<div class="header-bottom">	
+				<div class="top-nav">
 					<span class="menu-in"><img src="images/go.png" alt=""> </span>
 					<ul >
 						<li><a href="/">HOME</a></li>
@@ -64,7 +62,6 @@
 						});
 					</script>
 				</div>
-				
 			</div>
 			<div class="clearfix"> 
 			<?php
@@ -78,8 +75,8 @@
 		<!--top-->
 		<div class="content-top">
 
-			<div class="col-md-2 bottom-at">
-				<div class="shadow blue min350">
+			<div class="col-md-2">
+				<div class="shadow blue fixpad">
 					<h3>Dashboard</h3>
 					<ul class="normal">
 						<li><a href="#stat0">Statistic 0</a></li>
@@ -89,7 +86,7 @@
 				</div>	
 			</div>
 			
-			<div class="col-md-10 ">
+			<div class="col-md-10 men-grid">
 				<div class="red shadow min350"> 
 					<h2 id="stat0">Solr Statistic 0</h2>
 					<?php
@@ -106,7 +103,7 @@
 		<div class="content-middle">
 
 			<div class="col-md-2 bottom-at">
-				<div class="min350">
+				<div class="">
 					
 				</div>	
 			</div>
@@ -128,7 +125,7 @@
 		<!--bottom-->
 		<div class="content-bottom">
 			<div class="col-md-2 bottom-at">
-				<div class="min350">
+				<div class="">
 					
 				</div>	
 			</div>

@@ -23,8 +23,6 @@
 <!--fonts-->
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
 <!--//fonts-->
-<!--Calender -->
- <script src="js/site.js"></script>
 </head>
 <body>
 <div class="container">
@@ -32,14 +30,13 @@
 	<!--header-->
 		<div class="header shadow">
 			<div class="titlespace">
-				<a href="#" class="go nodecor logospace">
+				<a href="/" class="go nodecor logospace">
 				</a>
 				<h3 class="whitetxt">&nbsp;Solar power for everyone</h3>
 				<div class="clearfix"></div>
 			</div>
 
 			<div class="header-top">
-				
 				<div class="top-nav">
 					<ul class="floatright">
 						<li><a href="/">HOME</a></li>
@@ -49,9 +46,8 @@
 				</div>
 			</div>
 
-			<div class="header-bottom">
-				
-			<div class="top-nav">
+			<div class="header-bottom">	
+				<div class="top-nav">
 					<span class="menu-in"><img src="images/go.png" alt=""> </span>
 					<ul >
 						<li><a href="/">HOME</a></li>
@@ -66,7 +62,6 @@
 						});
 					</script>
 				</div>
-				
 			</div>
 			<div class="clearfix"> 
 			<?php

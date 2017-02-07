@@ -37,7 +37,6 @@
 			</div>
 
 			<div class="header-top">
-				
 				<div class="top-nav">
 					<ul class="floatright">
 						<li class="active"><a href="#">HOME</a></li>
@@ -47,14 +46,13 @@
 				</div>
 			</div>
 
-			<div class="header-bottom">
-				
-			<div class="top-nav">
+			<div class="header-bottom">	
+				<div class="top-nav">
 					<span class="menu-in"><img src="images/go.png" alt=""> </span>
 					<ul >
 						<li class="active"><a href="#">HOME</a></li>
 						<li><a href="products.php" >PRODUCTS</a></li>
-						<li><a href="dash.php" >DASHBOARD</a></li>
+						<li><a href="dash.php">DASHBOARD</a></li>
 					</ul>
 					
 					<script>
@@ -64,7 +62,6 @@
 						});
 					</script>
 				</div>
-				
 			</div>
 			<div class="clearfix"> 
 			<?php
