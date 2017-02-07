@@ -2,6 +2,7 @@
 $servername = "localhost";
 $username = "solr";
 $password = "kaas";
+$database = "solr";
 
 if (!function_exists('mysqli_init') && !extension_loaded('mysqli')) {
 	http_response_code(400);
@@ -11,7 +12,7 @@ if (!function_exists('mysqli_init') && !extension_loaded('mysqli')) {
 
 
 // Create connection
-$conn = new mysqli($servername, $username, $password);
+$conn = new mysqli($servername, $username, $password, $database);
 
 
 
@@ -38,3 +39,4 @@ if ($conn->query($sql) === TRUE) {
 }
 
 ?>
+
