@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>solr - home</title>
+<title>Solr - Dashboard</title>
+<meta name="theme-color" content="#3f51b5">
+<link rel="icon" type="image/png" href="images/icon.png">
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-
 <script src="js/jquery.min.js"></script>
-
-<!--theme-style-->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
-
-<!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="keywords" content="" />
-
 <script type="application/x-javascript"> 
 	addEventListener(
 		"load", 
@@ -27,18 +23,16 @@
 <!--fonts-->
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
 <!--//fonts-->
-<!--Calender -->
- <script src="js/site.js"></script>
 </head>
 <body>
 <div class="container">
 	<div class="main">
 	<!--header-->
-		<div class="header">
-			<div>
-				<a href="#" class="go nodecor whitetxt">
-					<h1>solr</h1>
+		<div class="header shadow">
+			<div class="titlespace">
+				<a href="#" class="go nodecor logospace">
 				</a>
+				<h3 class="whitetxt">&nbsp;Solar power for everyone</h3>
 				<div class="clearfix"></div>
 			</div>
 			
@@ -47,7 +41,7 @@
 				<div class="top-nav">
 					<ul class="floatright">
 						<li><a href="/">HOME</a></li>
-						<li><a href="products.html" >PRODUCTS</a></li>
+						<li><a href="products.php" >PRODUCTS</a></li>
 						<li class="active"><a href="#" >DASHBOARD</a></li>
 					</ul>
 				</div>
@@ -56,10 +50,10 @@
 			<div class="header-bottom">
 				
 			<div class="top-nav">
-					<span class="menu-in"><img src="images/menu.png" alt=""> </span>
+					<span class="menu-in"><img src="images/go.png" alt=""> </span>
 					<ul >
 						<li><a href="/">HOME</a></li>
-						<li><a href="products.html" >PRODUCTS</a></li>
+						<li><a href="products.php" >PRODUCTS</a></li>
 						<li class="active"><li><a href="#" >DASHBOARD</a></li>
 					</ul>
 					
@@ -72,76 +66,84 @@
 				</div>
 				
 			</div>
-			<div class="clearfix"> </div>		
+			<div class="clearfix"> 
+			<?php
+					
+	
+			
+			?>
+			</div>		
 		</div>
 
 		<!--top-->
 		<div class="content-top">
 
-			<div class="col-md-4 men">
-				<p class="blue min350">
-					left top
-				</p>
-			</div>
-
-			<div class="col-md-4">
-				<p class="red min350">
-					Middle column
-				</p>
+			<div class="col-md-2 bottom-at">
+				<div class="shadow blue min350">
+					<h3>Dashboard</h3>
+					<ul class="normal">
+						<li><a href="#stat0">Statistic 0</a></li>
+						<li><a href="#stat1">Statistic 1</a></li>
+						<li><a href="#stat2">Statistic 2</a></li>
+					</ul>
+				</div>	
 			</div>
 			
-			<div class="col-md-4  balloon">
-				<p class="blue min350">
-					Top right
-				</p>
+			<div class="col-md-10 ">
+				<div class="red shadow min350"> 
+					<h2 id="stat0">Solr Statistic 0</h2>
+					<?php
+					
+					?>		
+				</div>
 			</div>
+			
 			<div class="clearfix"> </div>
 		</div>
 		<!--//top-->
 
 		<!--middle-->
-			<div class="content-middle">
+		<div class="content-middle">
 
-				<div class="col-md-8 middle-at">
-					<p class="blue min350"> 
-						2 width column 
-					</p>
-				</div>
-
-				<div class="col-md-4">
-					<p class="blue min350">
-						Col middle
-					</p>	
-				</div>
-
-				<div class="clearfix"> </div>
+			<div class="col-md-2 bottom-at">
+				<div class="min350">
+					
+				</div>	
 			</div>
+			
+			<div class="col-md-10 ">
+				<div class="green shadow min350"> 
+					<h2 id="stat1">Solr Statistic 1</h2>
+					<?php
+					
+					?>	
+				</div>
+			</div>
+			
+			<div class="clearfix"> </div>
+		</div>
 
 		<!--//middle-->
 
 		<!--bottom-->
-			<div class="content-bottom">
-
-				<div class="col-md-4 bottom-at">
-					<p class="blue min350">
-						bottom left
-					</p>
-				</div>
-
-				<div class="col-md-4 men-grid-in">
-					<p class="blue min350">
-						bottom middle 
-					</p>
-				</div>
-
-				<div class="col-md-4">
-					<p class="blue min350">
-						fuck off
-					</p>
-				</div>						
-
-				<div class="clearfix"> </div>
+		<div class="content-bottom">
+			<div class="col-md-2 bottom-at">
+				<div class="min350">
+					
+				</div>	
 			</div>
+			
+			<div class="col-md-10 ">
+				<div class="blue shadow min350"> 
+					<h2 id="stat2">Solr Statistic 2</h2>
+					<?php
+					
+					?>	
+				</div>
+			</div>
+			
+			<div class="clearfix"> </div>
+		</div>
 				
 		<!--//-->
 		<p class="footer-class">
