@@ -12,6 +12,11 @@ ul.big li a, ul.big li {
     padding: 4px;
 }
 
+canvas.stats {
+	height: 100%;
+	width: 100%;
+}
+
 
 .logospace{
 	display: block;

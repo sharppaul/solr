@@ -20,6 +20,8 @@
 		window.scrollTo(0,1); 
 	} 
 </script>
+<!--plotting library-->
+<script src="js/plot.js"></script>
 <!--fonts-->
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
 <!--//fonts-->
@@ -89,6 +91,7 @@
 			<div class="col-md-10 men-grid">
 				<div class="red shadow min350"> 
 					<h2 id="stat0">Solr Statistic 0</h2>
+					<canvas class="stats" width="800" height="500"id="stats0"></canvas>
 					<?php
 					
 					?>		
@@ -111,6 +114,7 @@
 			<div class="col-md-10 ">
 				<div class="green shadow min350"> 
 					<h2 id="stat1">Solr Statistic 1</h2>
+					<canvas class="stats" width="800" height="500"id="stats1"></canvas>
 					<?php
 					
 					?>	
@@ -133,6 +137,7 @@
 			<div class="col-md-10 ">
 				<div class="blue shadow min350"> 
 					<h2 id="stat2">Solr Statistic 2</h2>
+					<canvas class="stats" width="800" height="500"id="stats2"></canvas>
 					<?php
 					
 					?>	
@@ -146,6 +151,25 @@
 		<p class="footer-class">
 			© 2017 Solr | Template by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a>
 		</p>
+		<script>
+			var myp = new MakeDraw(); 
+			var stats = "stats0 stats1 stats2".split(' ');
+			var datas = [
+			"0 10 200 300 200 100 0 10 20 300 40 500 500 400 300 200 100 0 20".split(' '), 
+			"20 300 40 500 500 400 300 200 100 0 200 10 200 300 200 100 0 10".split(' '), 
+			"0 10 200  300 100 0 10 300 200 40 500 500 400 20 300 200 100 0 20".split(' ')
+			]
+			for(var i = 0; i < 3; i++){
+				myp.id=stats[i]; 
+				myp.data=datas[i]; 
+				myp.textColor = 'rgba(255,255,255,1)';
+				myp.bgColor = 'rgba(0,0,0,0.1)'; 
+				myp.horizontalNR = 5;
+				myp.fSize = 18;
+				myp.enumerateH = 0.1;
+				myp.plot();
+			}
+		</script>
 	</div>
 </div>
 </body>
