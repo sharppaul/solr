@@ -4,9 +4,8 @@ $username = "solr";
 $password = "kaas";
 
 if (!function_exists('mysqli_init') && !extension_loaded('mysqli')) {
-	#http_response_code(400);
-	#exit();
-	echo "wtf1";
+	http_response_code(400);
+	exit();
 } 
  
 
@@ -22,20 +21,20 @@ if ($conn->connect_error) {
 } 
 
 if ( !isset($_POST['time']) || !isset($_POST['value']) ){
-        #http_response_code(400);
-        #exit();
-	echo "wtf2";
-
+		http_response_code(400);
+		exit();
 }
-
-$sql = "INSERT INTO data (time,value) VALUES (".mysql_real_escape_string(($_POST['time'])).",".mysql_real_escape_string ($_POST['value']).");";
+$sql = "INSERT INTO data (time,value) VALUES (".
+    mysqli_real_escape_string($conn, $_POST['time']).
+    ", ".
+    mysqli_real_escape_string($conn, $_POST['time']).
+    ");";
 
 if ($conn->query($sql) === TRUE) {
-	echo "VALUES (".mysql_real_escape_string(($_POST['time'])).",".mysql_real_escape_string ($_POST['value']).")";    
+		echo "VALUES (".mysql_real_escape_string(($_POST['time'])).",".mysql_real_escape_string ($_POST['value']).")";
 } else {
-	#http_response_code(500);
-        #exit();
-	echo "wtf3";
+		http_response_code(400);
+   		exit();
 }
 
 ?>
