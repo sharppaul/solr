@@ -562,7 +562,7 @@ p.footer-class a:hover{
 }
 @media(max-width:1024px){
 	.fixpad{
-		padding-bottom: 2em;
+		padding-bottom: 0em;
 	}
 	.top-nav ul li a {
 	  padding: 1em 1em;
@@ -597,10 +597,14 @@ p.footer-class a:hover{
 	.men-grid-in{
 		padding:2em 1em;
 	}
+	
+	.fixpad{
+		padding-bottom: 0em;
+	}
 }
 @media(max-width:768px){
 	.fixpad{
-		padding-bottom: 2em;
+		padding-bottom: 0em;
 	}
 	.header-bottom{
 		display:block;
@@ -702,7 +706,7 @@ p.footer-class a:hover{
 
 @media(max-width:640px){
 	.fixpad{
-		padding-bottom: 2em;
+		padding-bottom: 0em;
 	}
 	ul.col-at-in ,ul.col-at{
 	  top: 8%;

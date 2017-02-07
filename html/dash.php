@@ -20,8 +20,6 @@
 		window.scrollTo(0,1); 
 	} 
 </script>
-<!--plotting library-->
-<script src="js/plot.js"></script>
 <!--fonts-->
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
 <!--//fonts-->
@@ -81,17 +79,16 @@
 				<div class="shadow blue fixpad">
 					<h3>Dashboard</h3>
 					<ul class="normal">
-						<li><a href="#stat0">Statistic 0</a></li>
-						<li><a href="#stat1">Statistic 1</a></li>
-						<li><a href="#stat2">Statistic 2</a></li>
+						<li><a href="#stat0">Statistics</a></li>
+						<li><a href="#stat1">Generated Power</a></li>
 					</ul>
 				</div>	
 			</div>
 			
-			<div class="col-md-10 men-grid">
+			<div class="col-md-10 men-grid-in fixpad">
 				<div class="red shadow min350"> 
-					<h2 id="stat0">Solr Statistic 0</h2>
-					<canvas class="stats" width="800" height="500"id="stats0"></canvas>
+					<h2 id="stat0">Solr statistics</h2>
+					
 					<?php
 					
 					?>		
@@ -113,8 +110,8 @@
 			
 			<div class="col-md-10 ">
 				<div class="green shadow min350"> 
-					<h2 id="stat1">Solr Statistic 1</h2>
-					<canvas class="stats" width="800" height="500"id="stats1"></canvas>
+					<h2 id="stat1">Solr power generated</h2>
+					<canvas class="stats" id="stats0"></canvas>
 					<?php
 					
 					?>	
@@ -126,7 +123,7 @@
 
 		<!--//middle-->
 
-		<!--bottom-->
+		<!--bottom
 		<div class="content-bottom">
 			<div class="col-md-2 bottom-at">
 				<div class="">
@@ -151,25 +148,8 @@
 		<p class="footer-class">
 			© 2017 Solr | Template by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a>
 		</p>
-		<script>
-			var myp = new MakeDraw(); 
-			var stats = "stats0 stats1 stats2".split(' ');
-			var datas = [
-			"0 10 200 300 200 100 0 10 20 300 40 500 500 400 300 200 100 0 20".split(' '), 
-			"20 300 40 500 500 400 300 200 100 0 200 10 200 300 200 100 0 10".split(' '), 
-			"0 10 200  300 100 0 10 300 200 40 500 500 400 20 300 200 100 0 20".split(' ')
-			]
-			for(var i = 0; i < 3; i++){
-				myp.id=stats[i]; 
-				myp.data=datas[i]; 
-				myp.textColor = 'rgba(255,255,255,1)';
-				myp.bgColor = 'rgba(0,0,0,0.1)'; 
-				myp.horizontalNR = 5;
-				myp.fSize = 18;
-				myp.enumerateH = 0.1;
-				myp.plot();
-			}
-		</script>
+		<script src="js/chart.min.js"></script>
+		<script src="js/main.js"></script>
 	</div>
 </div>
 </body>
