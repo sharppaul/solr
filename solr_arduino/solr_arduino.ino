@@ -6,6 +6,9 @@ void setup() {
 void loop() {
   if(Serial.available()){
     sensorValue = analogRead(sensorPin); // read the value from the sensor
+    sensorValue = sensorValue * 2;
+    if( sensorValue > 100)
+	sensorValue = 100;
     Serial.println(sensorValue); //prints the values coming from the sensor on the screen
     Serial.read();
   }

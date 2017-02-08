@@ -34,6 +34,10 @@ while 1:
 	timeval = int(time.time())
 	data = '{"value": "' +str(ldrval)+ '", "time": "' + str(timeval) + '"}'
 	print data
-	req = requests.post("http://www.solr.com/update.php", data={'number': ldrval, 'time': timeval})
-	print(req.status_code, req.reason)
+	try:
+		req = requests.post("http://www.solr.com/update.php", data={'number': ldrval, 'time': timeval})
+		print(req.status_code, req.reason)
+	except:
+		print("Uploading failed.")
+	
 	time.sleep(10)
