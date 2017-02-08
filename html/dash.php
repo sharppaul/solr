@@ -80,7 +80,6 @@
     	            echo("Connection failed: " . $conn->connect_error);
                 } 
                 $result = $conn->query("SELECT * FROM data ORDER BY time DESC LIMIT 30;");
-                echo print_r($result);
                 /* If we have to retrieve large amount of data we use MYSQLI_USE_RESULT */
                 if ($result->num_rows > 0) {
 
