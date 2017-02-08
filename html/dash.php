@@ -80,7 +80,6 @@
                 /* check connection */
                 if ($conn->connect_errno) {
                     printf("Connect failed: %s<br>", $conn->connect_error);
-                    exit();
                 }
                 
                 /* If we have to retrieve large amount of data we use MYSQLI_USE_RESULT */
