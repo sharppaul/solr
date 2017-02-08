@@ -32,11 +32,12 @@ def getValue():
 while 1:
 	ldrval = getValue()
 	timeval = int(time.time())
-	data = '{"value": "' +str(ldrval)+ '", "time": "' + str(timeval) + '"}'
+	data = "http://solr.life/update.php?value=" + str(ldrval) + "&time=" + str(timeval) 
 	print data
 	try:
-		req = requests.post("http://www.solr.com/update.php", data={'number': ldrval, 'time': timeval})
+		req = requests.get( data )
 		print(req.status_code, req.reason)
+		#print req.text
 	except:
 		print("Uploading failed.")
 	
