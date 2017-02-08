@@ -1,14 +1,13 @@
 const stats0 = document.getElementById("stats0");
 
-labelArray = [];
-powerArray = [];
+var labelArray = [];
+var powerArray = [];
 //generate random data
 function generateData(){
 	labelArray = [];
-	powerArray = [];
-	for(var i = 0; i < 24; i++){
-		labelArray.push(String(i)+":00");
-		powerArray.push(60+Math.random()*80);
+	powerArray = grafdata;
+	for(var i = 30; i > 0; i--){
+		labelArray.push(String(i/6)+":"+String(i%6)+"0");
 	}
 	console.log(labelArray);
 	console.log(powerArray);
