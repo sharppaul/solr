@@ -72,18 +72,16 @@
                 $database = "solr";
 
                 if (!function_exists('mysqli_init') && !extension_loaded('mysqli')) {
-                    //	http_response_code(400);
-                    // 	exit();
                     echo "Connection failed: 001<br>";
                 } 
                 $conn = new mysqli($servername, $username, $password, $database);
                 /* check connection */
-                if ($conn->connect_errno) {
-                    printf("Connect failed: %s<br>", $conn->connect_error);
-                }
-                
+                if ($conn->connect_error) {
+    	            echo("Connection failed: " . $conn->connect_error);
+                } 
+                echo print_r($conn);
                 /* If we have to retrieve large amount of data we use MYSQLI_USE_RESULT */
-                if ($result = $conn->query("SELECT * FROM data ORDER BY time DESC LIMIT 10", MYSQLI_USE_RESULT)) {
+                if ($result = $conn->query("SELECT * FROM data ORDER BY time DESC LIMIT 10;", MYSQLI_USE_RESULT)) {
 
                     /* Note, that we can't execute any functions which interact with the
                        server until result set was closed. All calls will return an
@@ -93,7 +91,9 @@
                          $data[] = $row['value'];
                     }
                     $result->close();
-                    echo "<script>var grafdata=".json_encode($data).";</script>".PHP_EOL;
+                    echo "<script>".PHP_EOL.
+                    "var grafdata=".json_encode($data).";".PHP_EOL.
+                    "</script>".PHP_EOL;
                 }
 
                 $conn->close();
