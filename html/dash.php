@@ -65,6 +65,7 @@
 			</div>
 			<div class="clearfix"> 
 			<?php
+			    error_reporting(E_ALL);
 				$servername = "localhost";
                 $username = "solr";
                 $password = "kaas";
