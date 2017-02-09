@@ -117,10 +117,22 @@
 			<div class="col-md-10 men-grid-in fixpad">
 				<div class="red shadow min350"> 
 					<h2 id="stat0">Solr statistics</h2>
-					
-					<?php
-					
-					?>		
+					<h4 style="margin-top: 10px;">Costs</h3>
+          <ul class="normal">
+            <li>IKEA solar panel: €350</li>
+          </ul>
+          <h4 style="margin-top: 10px;">Revenue</h4>
+          <ul class="normal">
+            <li>Solar panel: €35 p/y - Break even after 10 years (<a href="http://ikea.solarcentury.com/nl/">source</a>)</li>
+          </ul>
+          <h4 style="margin-top: 10px;">Profit</h4>
+          <ul class="normal">
+            <li>Total profit: €525 - Operation life: 25 years  (<a href="http://ikea.solarcentury.com/nl/">source</a>)</li>
+          </ul>
+          <p style="margin-top: 10px;">
+          This means that we’ve realized an interest rate of 50 percent over 25 years, which would roughly come down to 2% per year, which is better than any bank would currently give you. The current inflation in The Netherlands is quite high. Since our profit is made in the form of electricity worth, our profit probably won’t be affected by the inflation of money, since the value of electricity probably correlates with the inflation of money.
+					</p>
+	
 				</div>
 			</div>
 			
