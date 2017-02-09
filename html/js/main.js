@@ -8,7 +8,7 @@ function generateData(){
 	powerArray = [];
 	for(var i = 30; i > 0; i--){
 		labelArray.push(String(Math.floor(i/6))+":"+String(i%6)+"0");
-		powerArray.push(100-grafdata[30-i]);
+		powerArray.push(grafdata[30-i]);
 	}
 	console.log(labelArray);
 	console.log(powerArray);
