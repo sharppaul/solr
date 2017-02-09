@@ -7,12 +7,14 @@ void setup() {
 }
 void loop() {
   sensorValue = analogRead(sensorPin); // read the value from the sensor
-  sensorValue = sensorValue * 2;
+  
+  sensorValue = sensorValue / 10;
+  
   if ( sensorValue > 100) {
     sensorValue = 100;
   }
   
-  if (sensorValue < 50) {
+  if (sensorValue > 90) {
     digitalWrite(ledPin, HIGH);
   } else {
     digitalWrite(ledPin, LOW);
