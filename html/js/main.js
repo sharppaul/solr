@@ -7,7 +7,7 @@ function generateData(){
 	labelArray = [];
 	powerArray = [];
 	for(var i = 30; i > 0; i--){
-		labelArray.push(String(Math.floor(i/6))+":"+String(i%6)+"0");
+		labelArray.push(String(Math.floor(i/6))+":"+String(i%6)+"0 ago");
 		powerArray.push(100-grafdata[i]);
 	}
 	console.log(labelArray);
